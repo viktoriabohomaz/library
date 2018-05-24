@@ -11,4 +11,7 @@ class Order
   		@date = date
   end 
 
+  #def to_s
+  # "#{@reader} orders #{@book}"
+  #end
 end  	

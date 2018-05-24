@@ -6,4 +6,7 @@ class Author
   		@biography = biography
   	end 
 
+    #def to_s
+    #  	"Author: #{@name}\nBiography: #{@biography}"
+    #end
 end  	

@@ -1,7 +1,7 @@
 class Reader
   attr_accessor :name, :email, :city, :street, :house
   
-  	def initialize(name, email, city, street, house) 
+  	def initialize(name:, email:, city:, street:, house:) 
   		@name = name
   		@email = email
   		@city = city
@@ -9,4 +9,7 @@ class Reader
   		@house = house
   	end 
   	
+    def to_s
+        "Reader: #{@name} / #{@email}"
+    end
 end 	
