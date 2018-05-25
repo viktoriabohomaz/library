@@ -9,7 +9,7 @@ class Reader
   		@house = house
   	end 
   	
-    def to_s
-        "Reader: #{@name} / #{@email}"
-    end
+    #def to_s
+    #    "Reader: #{@name} / #{@email}"
+    #end
 end 	

@@ -61,7 +61,7 @@
       city: Dnipro
       street: Pola
       house: '12'
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536302916 +00:00
   - !ruby/object:Order
     book: *2
     reade: &11 !ruby/object:Reader
@@ -70,7 +70,7 @@
       city: Kyiv
       street: Yavornitskogo
       house: '55'
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536310051 +00:00
   - !ruby/object:Order
     book: *3
     reade: &4 !ruby/object:Reader
@@ -79,11 +79,11 @@
       city: Lviv
       street: Bandery
       house: '1488'
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536314642 +00:00
   - !ruby/object:Order
     book: *2
     reade: *4
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536318191 +00:00
   - !ruby/object:Order
     book: *3
     reade: &5 !ruby/object:Reader
@@ -92,15 +92,15 @@
       city: Dnipro
       street: PobedaDeda
       house: '183'
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536321568 +00:00
   - !ruby/object:Order
     book: *2
     reade: *5
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536337158 +00:00
   - !ruby/object:Order
     book: *6
     reade: *4
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536340224 +00:00
   - !ruby/object:Order
     book: *6
     reade: &13 !ruby/object:Reader
@@ -109,7 +109,7 @@
       city: Dnipro
       street: Pobeda
       house: '123'
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536343708 +00:00
   - !ruby/object:Order
     book: *3
     reade: &12 !ruby/object:Reader
@@ -118,19 +118,19 @@
       city: Dnipro
       street: Pobeda
       house: '964'
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536347299 +00:00
   - !ruby/object:Order
     book: *7
     reade: *5
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536350272 +00:00
   - !ruby/object:Order
     book: *8
     reade: *4
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536357550 +00:00
   - !ruby/object:Order
     book: *9
     reade: *4
-    date: -4712-01-01
+    date: 2018-05-25 21:09:42.536360357 +00:00
 - - *10
   - *11
   - *4

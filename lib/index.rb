@@ -133,3 +133,7 @@ require_relative '../lib/reader.rb'
     
     library.save
     library.load
+    
+    library.most_popular_book
+    library.most_active_reader
+    
