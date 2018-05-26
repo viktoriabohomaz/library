@@ -1,8 +1,6 @@
 require "yaml"
-require_relative '../lib/author.rb'
-require_relative '../lib/book.rb'
-require_relative '../lib/order.rb'
-require_relative '../lib/reader.rb'
+
+
 class Library
   
   attr_accessor :books, :orders, :readers, :authors
@@ -49,28 +47,33 @@ class Library
       
   end
   
+  def the_first_three_popular_book
+    hash_books!
+    best_book = @hash.max_by(3) {|key, value|  value}.first(3).flatten
+    best_book = best_book.delete_if{ |i| i.class == Integer}.join(", ")
+    puts "The first three most popular book: #{best_book}"
+  end
   
   def most_active_reader
     hash_readers!
-    best_reader = @hash1.max_by {|key, value| key}.first
+    best_reader = @hash1.max_by {|key, value| value}.first 
     puts "Most active reader: #{best_reader}"
-      
   end
      
   private 
      
   def hash_books!
-      @hash = @orders.inject(Hash.new(0)) do |count, order|
+    @hash = @orders.inject(Hash.new(0)) do |count, order|
       count[order.book.title] += 1
       count
-      end 
+    end 
   end
     
   def hash_readers!
-    
+    #binding.pry
     @hash1 = @orders.inject(Hash.new(0)) do |count, order|
-    count[order.reader.name] = count[order.reader.name] + 1 unless order.reader.nil?
-    count
+      count[order.reader.name] = count[order.reader.name] + 1 unless order.reader.nil?
+      count
     end
   end
   
