@@ -50,8 +50,8 @@ class Library
   def the_first_three_popular_book
     hash_books!
     best_book = @hash.max_by(3) {|key, value|  value}.first(3).flatten
-    best_book = best_book.delete_if{ |i| i.class == Integer}.join(", ")
-    puts "The first three most popular book: #{best_book}"
+    count_readers = best_book.delete_if{ |i| i.class == String}.sum
+    puts "The first three popular book taked #{count_readers} readers"
   end
   
   def most_active_reader
