@@ -64,74 +64,74 @@ author12 = Author.new("Miguel de Cervantes Saavedra", "Spain")
 book12 = Book.new("Don Quixote", author12)
 reader12 = Reader.new(name: "Sam", email: "sam@examle.com", city: "Kharkiv", street: "RubyOnRails", house: "103")
 order12 = Order.new(book8, reader3)
-    
-   
-     
-    library = Library.new('', '', '', '')
-    library.add_author(author1)
-    library.add_book(book1)
-    library.add_reader(reader1)
-    library.add_order(order1)
-    
-    library.add_author(author2)
-    library.add_book(book2)
-    library.add_reader(reader2)
-    library.add_order(order2)
-   
-    library.add_author(author3)
-    library.add_book(book3)
-    library.add_reader(reader3)
-    library.add_order(order3)
-   
-    library.add_author(author4)
-    library.add_book(book4)
-    library.add_reader(reader4)
-    library.add_order(order4)
-    
-    library.add_author(author5)
-    library.add_book(book5)
-    library.add_reader(reader5)
-    library.add_order(order5)
-    
-    library.add_author(author6)
-    library.add_book(book6)
-    library.add_reader(reader6)
-    library.add_order(order6)
-    
-    library.add_author(author7)
-    library.add_book(book7)
-    library.add_reader(reader7)
-    library.add_order(order7)
-    
-    library.add_author(author8)
-    library.add_book(book8)
-    library.add_reader(reader8)
-    library.add_order(order8)
-    
-    library.add_author(author9)
-    library.add_book(book9)
-    library.add_reader(reader9)
-    library.add_order(order9)
-    
-    library.add_author(author10)
-    library.add_book(book10)
-    library.add_reader(reader10)
-    library.add_order(order10)
-    
-    library.add_author(author11)
-    library.add_book(book11)
-    library.add_reader(reader11)
-    library.add_order(order11)
-    
-    library.add_author(author12)
-    library.add_book(book12)
-    library.add_reader(reader12)
-    library.add_order(order12)
-  
-    library.save
-    library.load
-    
-    library.most_popular_book
-    library.the_first_three_popular_book
-    library.most_active_reader
-    
+
+library = Library.new
+
+library.push(author1)
+library.push(book1)
+library.push(reader1)
+library.push(order1)
+
+library.push(author2)
+library.push(book2)
+library.push(reader2)
+library.push(order2)
+
+library.push(author3)
+library.push(book3)
+library.push(reader3)
+library.push(order3)
+
+library.push(author4)
+library.push(book4)
+library.push(reader4)
+library.push(order4)
+
+library.push(author5)
+library.push(book5)
+library.push(reader5)
+library.push(order5)
+
+library.push(author6)
+library.push(book6)
+library.push(reader6)
+library.push(order6)
+
+library.push(author7)
+library.push(book7)
+library.push(reader7)
+library.push(order7)
+
+library.push(author8)
+library.push(book8)
+library.push(reader8)
+library.push(order8)
+
+library.push(author9)
+library.push(book9)
+library.push(reader9)
+library.push(order9)
+
+library.push(author10)
+library.push(book10)
+library.push(reader10)
+library.push(order10)
+
+library.push(author11)
+library.push(book11)
+library.push(reader11)
+library.push(order11)
+
+library.push(author12)
+library.push(book12)
+library.push(reader12)
+library.push(order12)
+
+library.push(Order.new(book10, reader1))
+
+library.save
+library.load
+
+library.most_popular_book
+library.the_first_three_popular_book
+library.most_active_reader
