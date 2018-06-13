@@ -22,12 +22,12 @@ class MyLibrary
   end
 
   def load
-    @library = YAML.load_file('../data/library.yml') ||
-    File.new('../data/library.yml", "w+')
+    @library = YAML.load_file("data/library.yml") ||
+    File.new("data/library.yml", "w+")
   end
 
   def save
-    File.open('../data/library.yml", "r+') do |f|
+    File.open("data/library.yml", "r+") do |f|
       f.write(@library.to_yaml)
     end
   end
